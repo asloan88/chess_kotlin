@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.GridLayout
 import edu.wcu.cs.asloan2.chess.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -38,6 +39,8 @@ class GameFrag : Fragment() {
         return inflater.inflate(R.layout.fragment_game, container, false)
     }
 
+
+    /*
     companion object {
         /**
          * Use this factory method to create a new instance of
@@ -47,7 +50,6 @@ class GameFrag : Fragment() {
          * @param param2 Parameter 2.
          * @return A new instance of fragment Game.
          */
-        // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             GameFrag().apply {
@@ -57,4 +59,6 @@ class GameFrag : Fragment() {
                 }
             }
     }
+
+     */
 }
