@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/wooden_light"
+    tools:context=".game.PlayGame">
+
+    <TextView
+        android:id="@+id/turn_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/turn_name"
+        android:textColor="@color/wooden"
+        android:textSize="40sp" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment1"
+        android:name="edu.wcu.cs.asloan2.chess.game.GameFrag"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_game" />
+
+</LinearLayout>

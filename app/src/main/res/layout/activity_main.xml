@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wooden"
+    tools:context=".controller.MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="@string/chess_meister"
+        android:textColor="@color/wooden_light"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/two_p"/>
+
+    <Button
+        android:id="@+id/two_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/wooden_light"
+        android:text="@string/two_player"
+        android:textColor="@color/wooden"
+        app:layout_constraintBottom_toTopOf="@id/four_p"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Button
+        android:id="@+id/four_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/wooden_light"
+        android:text="@string/four_player"
+        android:textColor="@color/wooden"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/two_p"
+        app:layout_constraintBottom_toTopOf="@id/settings"/>
+
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/wooden_light"
+        android:text="@string/settings"
+        android:textColor="@color/wooden"
+        android:layout_marginTop="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/rules"
+        app:layout_constraintTop_toBottomOf="@id/four_p"/>
+
+    <Button
+        android:id="@+id/rules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/wooden_light"
+        android:text="@string/rules"
+        android:textColor="@color/wooden"
+        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/settings"
+        app:layout_constraintTop_toBottomOf="@id/four_p" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

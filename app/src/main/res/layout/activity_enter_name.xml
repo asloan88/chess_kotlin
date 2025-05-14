@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wooden"
+    tools:context=".controller.EnterName">
+
+    <TextView
+        android:id="@+id/player_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_1"
+        android:textSize="30sp"
+        android:textColor="@color/wooden_light"
+        android:layout_marginTop="250dp"
+        app:layout_constraintBottom_toTopOf="@id/name_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name_one"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:hint="@string/player_1_name"
+        android:textColorHint="@color/wooden"
+        android:gravity="center"
+        android:background="@color/wooden_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/player_two"
+        app:layout_constraintTop_toBottomOf="@id/player_one"/>
+
+    <TextView
+        android:id="@+id/player_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_2"
+        android:textSize="30sp"
+        android:textColor="@color/wooden_light"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toTopOf="@id/name_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_one" />
+
+    <EditText
+        android:id="@+id/name_two"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:hint="@string/player_2_name"
+        android:textColorHint="@color/wooden"
+        android:background="@color/wooden_light"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player_two"/>
+
+    <Button
+        android:id="@+id/cont"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cont"
+        android:textColor="@color/wooden"
+        android:background="@color/wooden_light"
+        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_two" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
